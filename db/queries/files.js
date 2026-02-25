@@ -17,7 +17,7 @@ export async function createFile(name, size, folderId) {
   return file;
 }
 
-// GET /files - including name of the folder each file belongs to
+// Gets file - including name of the folder each file belongs to
 export async function getFilesIncludingFolderName() {
   const sql = `
   SELECT
